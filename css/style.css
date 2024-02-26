@@ -1,0 +1,108 @@
+/*
+Author: Sherin Farjana Sirajudeen sait
+Student number: C0931539
+Date: 23-02-2024
+File Name: style.css
+*/
+
+/* css Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: rgb(255, 172, 28);
+}
+
+header {
+	margin-left:35%;
+	padding-bottom:1%;
+}
+
+#container nav{
+	text-align:center;
+}
+
+#container nav a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.35em;
+	color: #000;
+	padding-left:2%;
+	text-decoration:none;
+}
+
+#index{
+    font-size: 1.35em;
+	font-family: serif;
+	text-align:center;
+	margin:2%;
+	padding: 1%;
+	Display:block;
+	border:3px solid;
+	border-radius:35px;
+	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+}
+
+img {
+    max-width: 100%;
+	padding-top:1%;
+}
+
+footer{
+	margin-top:3em;
+}
+
+footer p{
+	font-family: 'Roboto Slab', serif;
+    font-size: 0.95em; 
+    color: #fff;
+	text-align: center; 
+	margin:0.2%;
+	padding:0.2%;
+}
+
+footer a{
+    color:#00f; 
+}
+
+.specials{
+	border:none;
+	box-shadow:none;
+	border-radius:none;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+	padding-top:1.5%;
+	border-top:2px solid;
+}
+
+.special_img{
+	display:block;
+	margin:0 auto;
+	padding:0%;
+	border:3px solid;
+}
+
+#Portability, #Functionality, #Durability{
+	margin:2%;
+	padding:2%;
+	float:left;
+	border:3px solid;
+	border-radius:35px;
+	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+}
+
+#Performance, #Design, #Value{
+	margin:2%;
+	padding:2%;
+	float:right;
+	border:3px solid;
+	border-radius:35px;
+	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+}
+
+.special_footer{
+	clear:both;
+}
