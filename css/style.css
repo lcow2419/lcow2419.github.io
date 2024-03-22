@@ -106,3 +106,7 @@ footer a{
 .special_footer{
 	clear:both;
 }
+
+nav a {
+	font-weight:bold;
+}
