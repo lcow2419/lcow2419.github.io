@@ -1,0 +1,184 @@
+/*
+Author: Sherin Farjana Sirajudeen sait
+Student number: C0931539
+Date: 22-03-2024
+File Name: team.css
+*/
+
+/* css Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: rgb(255, 172, 28);
+}
+
+/* Style rules for body and images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+	margin-bottom: 1%;
+}
+
+nav a {
+    list-style-type: None;
+    text-align: center;
+	display: block;
+	border-top: 1.5px solid #000;
+	padding: 0.5em 1em;
+    text-decoration: none;
+	
+}
+
+nav a:last-child {
+	border-bottom:1.5px solid #000;
+}
+
+#container nav{
+	text-align:center;
+	padding-bottom: 2%;
+}
+
+#container nav a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.35em;
+	color: #000;
+	padding-left:2%;
+	text-decoration:none;
+}
+
+main h1 {
+	padding: 0.55em;
+	text-align:center;
+}
+
+.Team, aside {
+	text-align:center;
+	padding:0.55em;
+	margin: 0.55em;
+}
+	
+figure img {
+	border:3px solid;
+	border-radius:35px;
+}
+
+figure figcaption {
+	text-align:center;
+	padding:0.55em;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display:none;
+	}
+	
+	header {
+		margin-left:25%;
+		padding-bottom:1%;
+	}
+	
+	img {
+		max-width: 100%;
+		padding-top:1%;
+	}
+	
+	nav {
+		font-size: 0.80em;
+		border-bottom: 1.5px solid #000;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav a {
+		border-top: none;
+		display: inline-block;
+		border-right: 1.5px solid #000;
+		font-family: 'Francois One', sans-serif;
+		font-weight:bold;
+	}
+	
+	nav a:last-child {
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	.grid {
+		display:grid;
+		grid-template-columns:auto auto;
+		grid-gap: 20px;
+		grid-column:1 / span2;
+	}
+		
+	.third {
+		padding-left: 27%;
+		margin-right:0.001%;
+	}
+	
+}
+/*Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+	header {
+		margin-left:35%;
+		padding-bottom:1%;
+	}
+
+	img {
+		max-width: 100%;
+		padding-top:1%;
+	}
+	
+	nav {
+		font-size: 1.2em;
+	}
+	
+	main h1{
+		padding:0.15em;
+	}
+	
+	.grid {
+		display:grid;
+		grid-template-columns:auto auto auto;
+		grid-gap: 20px;
+		grid-column:1 / span3;
+	}
+	
+	.third {
+		padding-left: 2%;
+		margin-right:5%;
+	}
+	
+}
+
+
+footer{
+	margin-top:3em;
+}
+
+footer p{
+	font-family: 'Roboto Slab', serif;
+    font-size: 0.95em; 
+    color: #fff;
+	text-align: center; 
+	margin:0.2%;
+	padding:0.2%;
+}
+
+footer a{
+    color:#00f; 
+}
