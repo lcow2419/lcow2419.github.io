@@ -16,48 +16,63 @@ body{
 	background-color: rgb(255, 172, 28);
 }
 
-header {
-	margin-left:35%;
-	padding-bottom:1%;
+img { 
+	max-width: 100%;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+	margin-bottom: 1%;
+	background-color: #000;
+	color: rgb(255, 172, 28);
+}
+
+nav a {
+    list-style-type: None;
+    text-align: center;
+	display: block;
+	border-top: 1.5px solid rgb(255, 172, 28);
+	padding: 0.5em 1em;
+    text-decoration: none;
+	color: rgb(255, 172, 28);
+	
+}
+
+nav a:last-child {
+	border-bottom:1.5px solid #000;
 }
 
 #container nav{
 	text-align:center;
+	padding-bottom: 2%;
 }
 
 #container nav a{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.35em;
-	color: #000;
 	padding-left:2%;
 	text-decoration:none;
 }
 
-#index{
-    font-size: 1.35em;
-	font-family: serif;
-	text-align:center;
-	margin:2%;
-	padding: 1%;
-	Display:block;
-	border:3px solid;
-	border-radius:35px;
-	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+#Tablet-Desktop {
+	display:none;
 }
 
-img {
-    max-width: 100%;
-	padding-top:1%;
+#index {
+	padding: 1em;
+	text-align: center;
 }
 
 footer{
 	margin-top:3em;
+	background-color: rgb(255, 208, 163);
 }
 
 footer p{
 	font-family: 'Roboto Slab', serif;
     font-size: 0.95em; 
-    color: #fff;
+    color: #000;
 	text-align: center; 
 	margin:0.2%;
 	padding:0.2%;
@@ -67,6 +82,96 @@ footer a{
     color:#00f; 
 }
 
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	#Tablet-Desktop {
+		display: block;
+		margin-top: 0;
+		padding-top: 0;
+		
+	}
+	
+	header {
+		margin-left:25%;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		font-size: 0.80em;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav a {
+		border-top: none;
+		display: inline-block;
+		font-family: 'Francois One', sans-serif;
+		font-weight:bold;
+	}
+	
+	#container nav {
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-bottom: 0;
+	}
+	
+	nav a:last-child {
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	#index {
+		font-size: 1.2em;
+	}
+	
+}
+
+/*Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	#Tablet-Desktop {
+		display: block;
+		padding-top: 0%;
+	}
+	
+	header {
+		margin-left:35%;
+		padding-bottom:0.1%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		font-size: 1.1em;
+		padding:0.9%;
+	}
+	
+	nav a {
+		padding-bottom:none;
+		padding: 0.3%;
+		margin: 0.1%;
+	}
+	
+	#index {
+		margin: 2em;
+		display:block;
+		border:3px solid;
+		border-color: rgb(255, 172, 28);
+		border-radius:35px;
+		background-color:#000;
+		color: rgb(255, 172, 28);
+		box-shadow:2.5px 2.5px 2.5px 2.5px rgb(255, 208, 163);
+	}
+}
+
+
 .specials{
 	border:none;
 	box-shadow:none;
@@ -74,8 +179,7 @@ footer a{
 	font-weight:bold;
 	font-size:1.5em;
 	text-align:center;
-	padding-top:1.5%;
-	border-top:2px solid;
+	padding-top:0.5%;
 }
 
 .special_img{
@@ -86,27 +190,29 @@ footer a{
 }
 
 #Portability, #Functionality, #Durability{
-	margin:2%;
+	margin:3%;
 	padding:2%;
+	padding-left: 1.5em;
 	float:left;
 	border:3px solid;
 	border-radius:35px;
-	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(255, 208, 163);
+	background-color: #000;
+	color: rgb(255, 172, 28);
 }
 
 #Performance, #Design, #Value{
-	margin:2%;
+	margin:3%;
 	padding:2%;
+	padding-left: 1.5em;
 	float:right;
 	border:3px solid;
 	border-radius:35px;
-	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(0, 0, 0);
+	box-shadow:2.5px 2.5px 2.5px 2.5px rgb(255, 208, 163);
+	background-color: #000;
+	color: rgb(255, 172, 28);
 }
 
 .special_footer{
 	clear:both;
-}
-
-nav a {
-	font-weight:bold;
 }
