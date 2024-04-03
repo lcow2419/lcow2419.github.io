@@ -1,0 +1,290 @@
+/*
+Author: Sherin Farjana Sirajudeen sait
+Student number: C0931539
+Date: 02-04-2024
+File Name: contact.css
+*/
+
+/* css Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: rgb(255, 172, 28);
+}
+
+img { 
+	max-width: 100%;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+	margin-bottom: 1%;
+	background-color: #000;
+	color: rgb(255, 172, 28);
+}
+
+nav a {
+    list-style-type: None;
+    text-align: center;
+	display: block;
+	border-top: 1.5px solid rgb(255, 172, 28);
+	padding: 0.5em 1em;
+    text-decoration: none;
+	color: rgb(255, 172, 28);
+	
+}
+
+nav a:last-child {
+	border-bottom:1.5px solid #000;
+}
+
+#container nav{
+	text-align:center;
+	padding-bottom: 2%;
+}
+
+#container nav a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.35em;
+	padding-left:2%;
+	text-decoration:none;
+}
+
+#contact {
+	text-align: center;
+}
+
+.tel-link a{
+	background-color: #000;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+#contact .email-link  {
+	color: #000;
+}
+
+#contact .email-link a{
+	color: #4645a8;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.map {
+	border: 3px solid #000;
+	width: 95%;
+	height: 50%;
+}
+
+footer{
+	margin-top:3em;
+	background-color: rgb(255, 208, 163);
+}
+
+footer p{
+	font-family: 'Roboto Slab', serif;
+    font-size: 0.95em; 
+    color: #000;
+	text-align: center; 
+	margin:0.2%;
+	padding:0.2%;
+}
+
+footer a{
+    color:#00f; 
+}
+
+.tab-desk {
+	display: none;
+}
+
+form {
+	display:none;
+}
+
+.form {
+		display:none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	.tel-link {
+		display:none;
+	}
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	header {
+		margin-left:25%;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		font-size: 0.80em;
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav a {
+		border-top: none;
+		display: inline-block;
+		font-family: 'Francois One', sans-serif;
+		font-weight:bold;
+	}
+	
+	#container nav {
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-bottom: 0;
+	}
+	
+	nav a:last-child {
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	.map {
+            width: 500px;
+            height: 450px;    
+    }
+	
+	form {
+		display:none;
+	}
+	
+	.form {
+		display:none;
+	}
+}
+
+/*Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+	header {
+		margin-left:35%;
+		padding-bottom:0.1%;
+	}
+
+	img {
+		max-width: 100%;
+	}
+	
+	nav {
+		font-size: 1.1em;
+		padding:0.9%;
+	}
+	
+	nav a {
+		padding-bottom:none;
+		padding: 0.3%;
+		margin: 0.1%;
+	}
+	
+	.form {
+		display:block;
+		text-align:center;
+		margin-top: 2em;
+		margin-bottom: 1.1em;
+	}
+	
+	/* Style for the form container */
+	form {
+	  display:block;
+	  max-width: 600px;
+	  margin: 0 auto;
+	  padding: 20px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  background-color: #000;
+	  color: #fff;
+	}
+
+	/* Style for fieldset and legend */
+	fieldset {
+	  border: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	legend {
+	  font-size: 1.2em;
+	  font-weight: bold;
+	  margin-bottom: 10px;
+	}
+
+	/* Style for list items */
+	li {
+	  margin-bottom: 15px;
+	}
+
+	/* Style for labels */
+	label {
+	  display: block;
+	  font-weight: bold;
+	}
+
+	/* Style for inputs and textarea */
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea,
+	select {
+	  width: calc(100% - 20px);
+	  padding: 8px;
+	  margin: 2px;
+	  border: 1px solid #ccc;
+	  border-radius: 3px;
+	}
+
+	/* Style for buttons */
+	button {
+	  padding: 10px 20px;
+	  margin-top: 10px;
+	  background-color: #007bff;
+	  color: #fff;
+	  border: none;
+	  border-radius: 3px;
+	  cursor: pointer;
+	}
+
+	button[type="reset"] {
+	  background-color: #dc3545;
+	}
+
+	/* Style for checkboxes and radio buttons */
+	input[type="checkbox"],
+	input[type="radio"] {
+	  margin-right: 5px;
+	}
+
+	/* Style for form submission message */
+	.success-message {
+	  margin-top: 10px;
+	  padding: 10px;
+	  background-color: #dff0d8;
+	  border: 1px solid #c3e6cb;
+	  border-radius: 3px;
+	  color: #155724;
+	}
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- Author: Sherin Farjana Sirajudeen sait
+Student number: C0931539
+Date: 02-04-2024
+File Name: contact.html -->
+
+<html lang="en">
+<head>
+	<title>Power Drillers</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<header>
+			<a href="index.html"><img src="img/logo.jpg" alt="Company logo" width="440" height="300"></a>
+		</header>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="team.html">Our Team</a>
+			<a href="specials.html">Specials</a>
+			<a href="training.html">Training</a>
+			<a href="media.html">Media</a>
+			<a href="faqs.html">FAQs</a>
+			<a href="contact.html">Contact Us</a>
+		</nav>
+		
+
+		<main>
+		
+			<div id="contact">
+				<h2>Contact us!</h2>
+				<p class="tel-link mobile"><Strong>Call us:</Strong><a href="tel:+1(814)555-9228">(814)555-9228</a></p>
+				<p class="tab-desk tel-num">(814)555-9228</p>
+				<p class="email-link"><Strong>Email us: </Strong><a href="mailto:contact@powerdrillers.net"”>contact@powerdrillers.net</a></p>
+				<p><Strong>Visit us at :</Strong> 1122 Music Lane, Chicago, IL 60007</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380517.6512315266!2d-88.32289168994876!3d41.83273054770284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sca!4v1706661964563!5m2!1sen!2sca" width="600" height="450" class="map"></iframe>
+			</div>
+			
+			<h1 class="form">Contact Form</h1>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<ol>
+						<li>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" placeholder="first name" required>
+						</li>
+						<li>
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="example@gmail.com"required>
+						</li>
+						<li>
+							<label for="phone">Phone:</label>
+							<input type="tel" id="phone" name="phone" required>
+						</li>
+						<li>
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" rows="4" required></textarea>
+						</li>
+						<li>
+							<label for="birthdate">Birthdate:</label>
+							<input type="date" id="birthdate" name="birthdate" required>
+						</li>
+						<li>
+							<label for="gender">Gender:</label>
+							<input type="radio" id="male" name="gender" value="male" required>
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="gender" value="female" required>
+							<label for="female">Female</label>
+						</li>
+						<li>
+							<label for="subscribe">Subscribe to Newsletter:</label>
+							<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+							<label for="subscribe">Yes, I'd like to subscribe</label>
+						</li>
+						<li>
+							<label for="category">Category:</label>
+							<select id="category" name="category" required>
+								<option value="">Select category</option>
+								<option value="general">General Inquiry</option>
+								<option value="support">Support</option>
+								<option value="feedback">Feedback</option>
+							</select>
+						</li>
+					</ol>
+				</fieldset>
+				<button type="submit">Submit Request</button>
+				<button type="reset">Reset Form</button>
+			</form>
+		</main>
+		
+		<footer>
+			<p>&copy; Coyright 2024. All Rights Reserved.</p>
+			<p><a href="mailto:info@powerdrillers.com">Request Informtion</a><p>
+			<p> Sherin Farjana Sirajudeen Sait, Student number: C0931539 </p>
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
